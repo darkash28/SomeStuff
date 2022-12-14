@@ -1,0 +1,46 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+button{
+  margin: 0.5em;
+}
+
+input#color{
+  margin-left: 5px;
+}
+
+
+h1{
+  display: flex;
+  justify-content: center;
+
+}
+
+.grid-container{
+    display:grid;
+    width: 500px;
+    height: 500px;
+  
+}
+
+.cell {
+  border: 2px black solid;
+  grid-gap: 1px
+}
+
+.list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px
+
+}
+.color-container {
+  display: flex;
+  align-items: center;
+}
+

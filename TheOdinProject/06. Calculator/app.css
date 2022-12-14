@@ -1,0 +1,86 @@
+body{
+    font-family: "Ubuntu", sans-sherif;
+    font-size:20px;
+    margin:0;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e9fbff;
+}
+
+button {
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 5px #1a2d45;
+    transition: all 0.05s ease-out
+}
+
+button:active {
+    position: relative;
+    transform: translate(0px, 4px);
+    box-shadow: 0 0px #1a2d45;
+}
+
+.main {
+    width:300px;
+    flex-direction: column; 
+    background-color: #14adc6;
+    padding:10px;
+    border-radius: 10px;
+    border: 2px solid #1a2d45;
+    box-shadow: 0 10px #1a2d45;
+}
+.display{
+    flex-direction:column;
+    
+}
+
+.displayNum{
+    min-height: 1.5em;
+}
+.container{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 3em auto;
+    grid-template-areas: 
+    "reset reset delete"
+    "num num operator";
+    grid-gap: 10px;
+}
+
+.reset{
+    grid-area: reset;
+}
+.delet{
+    grid-area: delete;
+}
+.numbers{
+    grid-area:num;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 5px;
+    
+}
+.operators{
+    grid-area: operator;
+    grid-gap: 10px;
+    display:flex;
+    flex-direction: column;
+   
+}
+
+.display{
+    text-align: end;
+    background-color: antiquewhite;
+    box-shadow: 0 5px rgb(115, 108, 98);
+    margin-bottom: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    min-height: 50px;
+}
+
+#name{
+    padding-top: 2em;
+}
